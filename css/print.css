@@ -1,0 +1,237 @@
+/* STRUCTURE  ================================================================================= */
+body {
+	background:#fff; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #999;
+	font-size:12px;
+	line-height:18px;
+	text-align:left;
+}
+#wrapper {
+	width: 100%;
+}
+#column_right {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+/* column left  ================================================================================= */
+#column_left {
+	display:none;
+}
+#box {
+	display:none;
+}
+#box_wrapper {
+	display:none;
+	}
+#photo {
+	background-color: #fff;
+	padding:1px;
+	margin-bottom:10px;
+	display:none;
+
+}
+img#photo {
+	border:7px solid #a5b4c1;
+	}
+#column_left  ul { display:none;
+	list-style-type:none;
+	margin:20px 0 0 0;
+	padding:0px;
+	line-height:22px;
+}
+#column_left  a:link, #column_left  a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#column_left  a:hover {
+	color:#587c9a;
+	text-decoration:none;
+}
+#column_left  a:link.active, #column_left  a:visited.active {
+	color:#587c9a;
+	text-decoration:none;
+}
+
+/* OTHER STYLES  ================================================================================= */
+
+h1{
+	font-size: 40px; color:#000; margin-bottom:10px;
+}	
+h2 {
+	font-size:22px; color: #999; font-weight:normal;
+}
+h3 {
+	color:#333;
+	font-size:16px;
+	margin-bottom:8px;
+}
+h4 { font-size:14px; margin-top:5px;  color: #999;
+}
+.title {
+	text-align:right;
+	color:#fff;
+	}
+	.title_contact {
+	color:#333;
+	font-weight:600;
+	font-size:12px;
+	}
+/* personal details  ================================================================================= */
+#personal_details {
+	padding:10px 30px 35px 0px;
+	font-size:14px;
+	line-height:24px;
+}
+#personal_details ul {
+	list-style-type:none;
+	margin:0px;
+	padding:30px 0px 20px 0px;
+}
+#personal_details ul li {
+	display: inline-block; overflow:hidden;
+	border-bottom:1px solid #ccc;
+}
+#personal_details ul li span {
+	font-weight:600; float:left; width:150px; color:#999;
+}
+#personal_details ul li em {
+float:left; font-style:normal; width:350px;
+}
+/* block   ================================================================================= */
+.block { border-top:1px solid #ccc; padding:15px 10px 20px 0; line-height:16px;}
+.block p { padding-bottom:15px; }
+.date { font-size:14px; color:#999; display:block; }
+ul.bullet { 
+list-style-type: circle;
+margin:0; 
+padding:10px 0 20px 20px;
+
+}
+ul.bullet li {
+	background: non; padding-left:5px; margin-top:8px;
+}
+ul.bullet li span {
+	
+}
+/* personal details  ================================================================================= */
+ul#skill {
+	list-style-type:none;
+	margin:0;
+	padding:10px 0 0 0;
+
+}
+#skill li {
+overflow:hidden; margin:0; padding:0;
+	
+}
+ul#skill li span {
+float:left; width:140px;margin:0; padding:0;
+}
+ul#skill li em {
+float:left;width:85px; height:9px; background:url(../img/bg_bar.gif) repeat-x top left; margin-top:3px;
+}
+
+ul#skill li em span {
+	background: url(../img/bar.png) repeat-x top left;  height:9px; margin:0; padding:0;
+}
+
+.column {
+	float:left; width:250px; 
+}
+.column_skill {
+	float:left; width:230px; 
+}
+
+
+/* button style  ================================================================================= */
+button { 
+	cursor: pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow: visible; /* removes extra side padding in IE */
+	color:#fff;
+	}
+button.btn {
+	border: 0; 
+	padding: 0;
+	outline: none;
+}
+button span { 
+	display: block; 
+	}
+button.btn { 
+	padding: 6px 20px 5px 20px; 
+	font-size: 11px; 
+	text-align: center; 
+	background: #42413f;
+	}
+button.btn:hover, button.btnHover { background:#6b6966} /* extra class used for sucky browsers (stupid IE) */
+
+
+/* portfolio page  ================================================================================= */
+.portfolio_item {
+	margin-bottom:25px;
+	padding-bottom:25px;
+	padding-top:25px;
+	border-top: 1px solid #ccc;
+}
+.portfolio_item img {
+	border:1px solid #ccc;
+padding:5px;
+	float:left;
+	margin-right:50px;
+	
+}
+.portfolio_description {
+	padding-top:10px;
+	width:250px;
+	float:left;
+	margin-left:3px;
+
+}
+.portfolio_description em a:link, .portfolio_description em a:visited {
+	display:none;
+}
+
+#portfolio_head {
+padding: 20px 0 20px 0; background:url(../img/bg_column_right.png) no-repeat top right;
+}
+#portfolio_head h1 { font-size:24px; margin-bottom:10px; 	
+}
+.portfolio_item_screen  {
+	border-top: 1px solid #ccc;
+}
+.portfolio_item_screen img {
+	border: 1px solid #ccc;
+padding:5px;
+	margin-bottom:20px;
+	width:25%;
+	height:auto;
+	margin-right:10px;
+}
+
+/* pagination ================================================================================= */
+
+ul#pagination { display:none }
+
+
+/* hide bar pagination ================================================================================= */
+
+.jx-bar {
+	display:none;
+}
+/*----- button tooltip -----*/
+.jx-bar-button-tooltip {
+	display:none;
+}
+
+/*----- nav menu -----*/
+.jx-nav-menu {
+	display:none;
+}
+.jx-nav-menu ul {
+	display:none;
+}
+

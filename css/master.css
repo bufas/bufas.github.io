@@ -1,0 +1,393 @@
+/* STRUCTURE  ================================================================================= */
+body {
+	background:#313035 url(../img/pattern.jpg) repeat fixed; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#ededed; 
+	font-size:12px;
+	line-height:18px;
+	margin:0;
+		height:100%; 
+}
+html {
+	height:100%; margin:0;
+}
+#wrapper {
+	width:784px;
+	margin:auto;
+	background: url(../img/bg_frame.png) repeat-y left top;
+	padding-bottom:45px;
+	overflow:hidden;
+	min-height:100%;
+}
+#column_right {
+	width:510px;
+	float:right;
+    display:inline;
+		margin-right:45px;
+}
+a:link, a:visited {
+	color:#fff;
+	text-decoration:underline;
+}
+
+/* column left  ================================================================================= */
+#column_left {
+	width:150px;
+	float:left;
+	padding:0;
+	display:inline;
+	margin-left:45px;
+}
+#box {
+	background:url(../img/bg_column_left.png) no-repeat right bottom;
+	width:150px;
+	height:450px;
+	position:fixed;
+	font-size:14px;
+	text-align:right;
+}
+#box_wrapper {
+	padding:25px 35px 15px 2px;
+}
+#photo {
+	background-color: #fff;
+	padding:1px;
+	margin-bottom:10px;
+}
+img#photo {
+	border:7px solid #353537;
+	}
+#column_left  ul {
+	list-style-type:none;
+	margin:20px 0 0 0;
+	padding:0px;
+	line-height:22px;
+}
+#column_left  a:link, #column_left  a:visited {
+	color:#979797;
+	text-decoration:none;
+}
+#column_left  a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+#column_left  a:link.active, #column_left  a:visited.active {
+	color:#fff;
+	text-decoration:none;
+}
+/* OTHER STYLES  ================================================================================= */
+.clear {
+	clear:both;
+}
+.color {
+	color:#a0cfe2;
+}
+h1{
+	font-size: 55px; color:#6dcff6; margin:0; padding:0;  font-weight:normal;
+}	
+h2 {
+	font-size:24px; color:#fff; font-weight:normal;
+}
+h3 {
+	color:#6dcff6;
+	font-size: 24px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+h4 { font-size:16px; 
+margin-top:5px;
+text-transform:uppercase;
+margin-top:15px;
+color:#fff;
+}
+.title {
+	text-align:right;
+	color:#fff;
+	}
+	.title_contact {
+	color:#333;
+	font-weight:600;
+	font-size:12px;
+	}
+	/* last projects  ================================================================================= */
+#last_pro img { 
+background:url(../img/bg_black_20.png) repeat;
+padding:6px;
+margin-right:8px;
+}
+/* work experience ================================================================================= */
+.company_logo { 
+float:right;
+display:block;
+margin-bottom:60px;
+margin-left:10px;
+background:url(../img/bg_black_20.png) repeat;
+padding:4px;
+}
+/* personal details  ================================================================================= */
+#personal_details {
+	font-size:14px;
+	line-height:24px;
+		padding:55px 30px 35px 0px;
+		background:url(../img/bg_column_right.png) no-repeat top right;
+}
+#personal_details ul {
+	list-style-type:none;
+	margin:0px;
+	padding:30px 0px 20px 0px;
+	width:510px;
+}
+#personal_details ul li {
+	display: inline-block; 
+	overflow:hidden;
+	background:url(../img/list_bg.png) no-repeat left top;
+	padding:6px;
+}
+#personal_details ul li span {
+	float:left; 
+	width:145px;
+	color:#a0cfe2;
+}
+#personal_details ul li em {
+float:left; font-style:normal; width:350px;
+}
+/* block   ================================================================================= */
+.block {background:url(../img/line_block.png) no-repeat left top; padding:15px 10px 20px 0; line-height:16px;
+}
+.block p { padding-bottom:15px; }
+.date { font-size:14px; color:#a0cfe2; display:block; }
+ul.bullet { 
+list-style-type:none; 
+margin:0; 
+padding:10px 0 20px 0;
+
+}
+ul.bullet li {
+	background: url(../img/arrow.png) no-repeat 0 6px; padding-left:15px; margin-top:8px;
+}
+ul.bullet li span {
+	
+}
+/* skill  ================================================================================= */
+ul.skill {
+	list-style-type:none;
+	margin:0;
+	padding:10px 0 0 0;
+
+}
+.skill li {
+overflow:hidden; margin:0; padding:0;
+	
+}
+ul.skill li span {
+float:left; width:140px;margin:0; padding:0;
+}
+ul.skill li em {
+float:left;width:85px; height:9px; background:url(../img/bg_bar.gif) repeat-x top left; margin-top:3px;
+}
+
+ul.skill li em span {
+	background: url(../img/bar.png) repeat-x top left;  height:9px; margin:0; padding:0;
+}
+.column {
+	float:left; width:250px; 
+}
+.column_skill {
+	float:left; width:230px; 
+}
+/* form style  ================================================================================= */
+	#contactform { color:#900; font-size:11px;
+	}
+	#contactform p { margin-bottom:17px;
+	}
+#contactform input, #contactform textarea{ padding:4px; border-bottom: 1px solid #fff; border-right: 1px solid #fff;border-top: 1px solid #ccc; border-left: 1px solid #ccc; background:#f5f5f5 url(../img/shadow_form.png) no-repeat top left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666; width:245px; margin-bottom:3px; font-style:normal; display:block;
+	}
+	#contactform input:focus, #contactform textarea:focus{ border:1px solid #999;
+	}
+	hr {height:1px; background-color:#d6d6d5; border:none; margin:20px 0 20px 0; color:#d6d6d5}
+
+/* button style  ================================================================================= */
+button { 
+	cursor: pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow: visible; /* removes extra side padding in IE */
+	color:#fff;
+	}
+button.btn {
+	border: 0; 
+	padding: 0;
+	outline: none;
+}
+button span { 
+	display: block; 
+	}
+button.btn { 
+	padding: 6px 20px 5px 20px; 
+	font-size: 11px; 
+	text-align: center; 
+	background: #42413f;
+	}
+button.btn:hover, button.btnHover { background:#6b6966} /* extra class used for sucky browsers (stupid IE) */
+
+/* portfolio page  ================================================================================= */
+.portfolio_item {
+	margin-bottom:25px;
+	display:block;
+	padding-bottom:25px;
+	padding-top:25px;
+	background:url(../img/line_block.png) no-repeat left top;
+}
+.portfolio_item img {
+	background:url(../img/bg_black_20.png) repeat;
+padding:5px;
+	float:left;
+	margin-right:35px;
+	display:inline;
+}
+.portfolio_description h3 {
+	color:#6dcff6;
+	font-size: 24px;
+	font-weight:normal;
+	margin-bottom:5px;
+}
+.portfolio_description {
+	padding-top:10px;
+	width:170px;
+	float:left;
+	display:inline;
+	line-height:14px;
+}
+.portfolio_description em a:link, .portfolio_description em a:visited {
+	margin-top:25px;
+	width:60px;
+	height: 22px;
+		display:block;
+	line-height:22px;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	font-style:normal;
+	background:#6dcff6;
+	color:#000000;
+	font-weight:bold;
+}
+.portfolio_description em a:hover {
+	text-align:center;
+	color:#FFF;
+	text-decoration:none;
+	background:#b1bfca;
+}
+.portfolio_item_screen {
+	margin-bottom:25px;
+	display:block;
+	padding-bottom:25px;
+	padding-top:25px;
+	background:url(../img/line_block.png) no-repeat left top;
+}
+.portfolio_item_screen img {
+	background:url(../img/bg_black_20.png) repeat;
+padding:5px;
+	margin-bottom:50px;
+}
+.column_item {
+	float:left; 
+	width:220px;
+	margin-right:35px;
+	margin-top:30px;
+}
+.column_item img {
+	display:block;
+	margin-bottom:10px;
+}
+#portfolio_head {
+padding: 65px 0 20px 0; background:url(../img/bg_column_right.png) no-repeat top right;
+}
+#portfolio_head h1 { font-size:24px; margin-bottom:10px; 	
+}
+
+/* pagination ================================================================================= */
+
+ul#pagination {border:0; margin:0 0 25px 0; padding: 5px 25px 25px 25px; }
+
+#pagination li {
+border:0; margin:0; padding:0;
+font-size:11px;
+list-style:none;
+float:left;
+}
+#pagination a {
+border:solid 1px #DDDDDD;
+margin-right:2px;
+}
+#pagination .previous-off,
+#pagination .next-off {
+color:#666666;
+display:block;
+float:left;
+font-weight:bold;
+padding:3px 4px;
+}
+#pagination .next a,
+#pagination .previous a {
+font-weight:bold;
+border:solid 1px #FFFFFF;
+}
+#pagination .active {
+font-weight:bold;
+display:block;
+float:left;
+padding:4px 6px;
+}
+#pagination a:link,
+#pagination a:visited {
+display:block;
+float:left;
+padding:3px 6px;
+text-decoration:none;
+}
+#pagination a:hover {
+border:solid 1px #0072bc;
+}
+
+/* tilføjet af mathias ======================================================================= */
+
+#portfolio_special_list {
+	font-size:14px;
+	line-height:24px;
+	list-style-type:none;
+	margin:0px;
+	padding:30px 0px 20px 0px;
+	width:510px;
+}
+#portfolio_special_list li {
+	display: inline-block; 
+	overflow:hidden;
+	background:url(../img/list_bg.png) no-repeat left top;
+	padding:6px;
+}
+#portfolio_special_list span {
+	float:left; 
+	width:145px;
+	color:#a0cfe2;
+}
+#portfolio_special_list em {
+	float:left;
+	font-style:normal;
+	width:350px;
+}
+
+#regex_body #results td {
+	border-top:1px solid #666666;
+}
+#regex_body #fixedspan {
+	display:inline-block;
+	width:120px;
+	vertical-align:top;
+}
+#regex_body input[type=text] { width: 376px; }
+#regex_body textarea { width:100%; height:60px; margin-bottom:7px; }
+
+#wrapper .block #contactform .input_navn { margin:0px; padding:0px; height:29px; width:498px; background-image:url(../img/input_navn.png); }
+#wrapper .block #contactform .input_mail { margin:0px; padding:0px; height:29px; width:498px; background-image:url(../img/input_mail.png); }
+#wrapper .block #contactform .input_telefon { margin:0px; padding:0px; height:29px; width:498px; background-image:url(../img/input_telefon.png); }
+#wrapper .block #contactform .input_besked { margin:0px; padding:0px; height:224px; width:498px; background-image:url(../img/input_besked.png); resize:none; }
