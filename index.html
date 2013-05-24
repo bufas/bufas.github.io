@@ -23,6 +23,8 @@
 	<link rel="stylesheet" href="stylesheets/foundation.css">
 	<link rel="stylesheet" href="stylesheets/app.css">
 	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="http://vanderlee.github.io/colorpicker/jquery.colorpicker.css">
 	<link rel="stylesheet" href="stylesheets/tooltipster.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
 	<!--[if IE 8]>
@@ -35,6 +37,9 @@
 </head>
 
 <body>
+
+<input id="picker" type="text" class="picker" style="position:fixed; top: 100px; width:50px;" />
+
 	<a id="home-nav"></a>
 	<div class="navi" data-magellan-expedition>
 		<ul >
@@ -42,7 +47,7 @@
 			<li data-magellan-arrival='profile' class="hasatip" data-width="210" title="Profile"><a href="#profile-nav" class="scroll"><i class="icon-user"></i></a></li>
 			<li data-magellan-arrival='resume' class="hasatip" data-width="210" title="Resume"><a href="#resume-nav" class="scroll"><i class="icon-reorder"></i></a></li>
 			<li data-magellan-arrival='projects' class="hasatip" data-width="210" title="Projects"><a href="#projects-nav" class="scroll"><i class="icon-eye-open" ></i></a></li>
-			<li data-magellan-arrival='contact' class="hasatip" data-width="210" title="Contact"><a href="#contact-nav" class="scroll"><i class="icon-envelope"></i></a></li>						  
+			<li data-magellan-arrival='contact' class="hasatip" data-width="210" title="Contact"><a href="#contact-nav" class="scroll"><i class="icon-envelope"></i></a></li>
 		</ul>
 	</div>
 	<div class="row">
@@ -381,6 +386,8 @@
 		<script src="javascripts/app.js"></script>
 		<script src="javascripts/scripts.js"></script>
 		<script src="javascripts/jquery.tooltipster.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="http://vanderlee.github.io/colorpicker/jquery.colorpicker.js"></script>
 
 	</body>
 </html>
