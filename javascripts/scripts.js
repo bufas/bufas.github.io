@@ -27,6 +27,10 @@ $(document).ready(function() {
 	 });
 	 
 	 $('.picker').colorpicker({ colorFormat: '#HEX', draggable: false, select: newcolor });
+	 
+	 $('.bgchang').click(function(){
+		 $('body').css('background-image','url('+$(this).attr('src')+')');
+	 });
 });
 
 
@@ -40,5 +44,6 @@ function newcolor(color) {
 	$('*').filter(function(i){ return $(this).css("border-top-color") == from; }).css("border-top-color", color);
 	$('*').filter(function(i){ return $(this).css("border-bottom-color") == from; }).css("border-bottom-color", color);
 	$('*').filter(function(i){ return $(this).css("color") == from; }).css("color", color);
+	$('.tooltipster-default').css('background-color', color);
 	$('.resume-large-icon').remove();
 }
