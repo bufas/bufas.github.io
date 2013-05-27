@@ -1,12 +1,33 @@
 ---
 layout: post
-title: En Jekyll test
+title: Installing Jekyll on Mac OS X Mountain Lion
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. *Nullam non pretium turpis.* Quisque ornare dui ac ligula posuere dapibus. Cras lobortis odio quis nulla scelerisque non vestibulum elit condimentum. In ultrices tincidunt ipsum at feugiat. Morbi augue quam, fermentum ut tempus vel, molestie at justo. Aenean aliquam aliquet arcu in lacinia. Sed sit amet rhoncus mi. Aliquam porttitor est quis nibh posuere quis scelerisque elit pretium. Aenean scelerisque condimentum nisi sit amet hendrerit. Donec sit amet urna libero, at volutpat nunc. Praesent eu volutpat justo. Quisque at tellus massa, nec facilisis enim. Donec ultrices, augue non tristique porta, magna magna consequat diam, ultrices placerat ipsum justo volutpat nisi.
+Installing Jekyll on Mountain Lion can be a bit of struggle. Especially if you don't want to install the truckload of unusable stuff that is Xcode. You probably already know what Jekyll is since you are trying to install it, but in the off chance that you don't, here is a "link to the Jekyll website":http://jekyllrb.com/. What I want to do here is to give a quick tutorial on how to get the software installed.
 
-Morbi mattis congue bibendum. Etiam id ante nisl, in blandit sapien. Donec nec metus diam. _Nullam vehicula luctus_ urna ultricies tristique. Aliquam venenatis sagittis tortor. Nunc adipiscing erat nisl, eu euismod dui. Vestibulum tristique scelerisque pretium. Nunc eu sapien dui. Vivamus sit amet turpis tortor. In posuere pellentesque mauris et facilisis. Vestibulum sit amet dolor eros. In varius massa sed massa feugiat nec dapibus erat consequat. Duis elit tortor, volutpat quis varius quis, blandit eget dolor. Maecenas quis malesuada erat.
+h3. Step 1 - Install command line tools for Xcode
 
-In sodales, libero id ornare tincidunt, turpis ipsum feugiat dui, sit amet viverra leo turpis vitae quam. Nam auctor nibh ipsum. Proin interdum facilisis ipsum, tempus suscipit lorem iaculis et. Maecenas nibh ligula, imperdiet eget semper vitae, pharetra rutrum odio. Proin eget ante ac neque mollis pellentesque. Donec convallis neque sit amet arcu pretium et semper nunc hendrerit. Nulla facilisi. Quisque sollicitudin, sapien in eleifend interdum, neque lectus interdum erat, et pellentesque tellus nisi nec nulla.
+Go to the "Apple developer site":https://developer.apple.com/downloads/index.action?=command%20line%20tools to download the command line tools for Xcode. In order to do this you will need an Apple developer account, but it is free and easy to create. Just follow the link.
 
-Duis consectetur urna vel metus aliquet ac eleifend mauris bibendum. Fusce tincidunt lacinia mi viverra pretium. Proin mattis dapibus ligula eget tempor. Curabitur et erat adipiscing libero faucibus scelerisque eget at lacus. In dignissim, lorem a sollicitudin mollis, lorem sem ullamcorper augue, non aliquam turpis diam iaculis tellus. Fusce posuere magna quis mauris auctor vulputate. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut convallis nulla. Suspendisse ornare felis vitae libero mollis eget rutrum ante blandit. Vivamus sed ligula lorem, ac mollis nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum hendrerit, magna non mollis varius, nulla tortor fermentum neque, sed facilisis dolor purus sit amet ante. Sed aliquam, ipsum sit amet porttitor vulputate, ligula sem pulvinar augue, non commodo libero enim vel metus.
+Run @xcode-select -switch /usr/bin@ to set the path to Xcode CLT correctly.
+
+h3. Step 2 - Install Ruby Gems
+
+Go do "this site":http://rubygems.org/pages/download and download Ruby Gems.
+
+h3. Step 3 - Replace broken xcrun
+
+For some reason, the xcrun utility does not work. Before changing it, I recommend that you back it up. You can use @cp /usr/bin/xcrun /usr/bin/xcrun-backup@ to do this. Next, open @/usr/bin/xcrun@ in your favorite editor and insert the following
+
+{% highlight bash %}
+#!/bin/bash
+$@
+{% endhighlight %}
+
+More information can be seen in "this question":http://stackoverflow.com/questions/13041525/osx-10-8-xcrun-no-such-file-or-directory on Stack Overflow.
+
+h3. Step 4 - Install the Jekyll gem
+
+@sudo gem install jekyll@
+
+That is all. You should now have a working installation of Jekyll.
