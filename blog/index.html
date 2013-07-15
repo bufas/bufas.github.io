@@ -25,29 +25,21 @@ title: sometitle
 			
 			{% include profile_box.html %}
 			
-			<section class="row page" id="profile" data-magellan-destination='profile'>
+			{% for post in site.posts %}
+			<section class="row page">
 				
 				<div class="twelve columns">
-					<h5 class="page-heading">{{ page.title }}</h5>
-					<hr />
+					<h5 class="page-heading">{{ post.title }}</h5>
 
-					<ul>
-					  {% for post in site.posts %}
-					    <li>
-					      <a href="{{ post.url }}">{{ post.title }}</a>
-					    </li>
-					  {% endfor %}
-					</ul>
+					<p class="post-excerpt">{{ post.excerpt }}</p>
 
-				</div>
-				
-				<div class="twelve columns">
-
-					This is something!
-
+					<div class="twelve columns text-right">
+						<a href="{{ post.url }}" class="label contact-detail"><i class="icon-chevron-right">&nbsp;</i>Read the whole post</a>
+					</div>
 				</div>
 				
 			</section><!-- end of Post -->
+			{% endfor %}
 			
 			{% include javascript.html %}
 			

@@ -532,7 +532,7 @@ section{
 	line-height: 1.5em;
 }
 
-.blog-content a {
+.blog-content a, .post-excerpt a {
 	color: #00f;
 	text-decoration: underline;
 }
@@ -558,3 +558,4 @@ section{
   padding: 0 .5em;
   line-height: 1.8em;
 }
+
