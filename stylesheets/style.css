@@ -215,28 +215,28 @@ section{
 }
 
 .graphic-design {
-	width:90%; 
+	width:100%; 
 	-moz-animation:graphic-design 2s ease-out;
 	-webkit-animation:graphic-design 2s ease-out;
 	background-color: #4c66a4;
 }
 
 .html-css {
-	width:85%;
+	width:100%;
 	-moz-animation:html-css 2s ease-out;
 	-webkit-animation:html-css 2s ease-out;
 	background-color: #4c66a4;
 }
 
 .jquery {
-	width:95%;
+	width:100%;
 	-moz-animation:jquery 2s ease-out;
 	-webkit-animation:jquery 2s ease-out;
 	background-color: #4c66a4;
 }
 
 .wordpress {
-	width:80%;
+	width:100%;
 	-moz-animation:wordpress 2s ease-out;
 	-webkit-animation:wordpress 2s ease-out;
 	background-color: #4c66a4;
