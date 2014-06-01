@@ -524,12 +524,12 @@ section{
 
 .blog-content p {
 	font-size: 21px;
-	font-family: 'Raleway',"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-weight: 200;
 	font-style: normal;
 	color: #222222;
 	text-rendering: optimizeLegibility;
-	line-height: 1.5em;
+	line-height: 1.2em;
 }
 
 .blog-content a, .post-excerpt a {
