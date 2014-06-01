@@ -559,3 +559,7 @@ section{
   line-height: 1.8em;
 }
 
+/* Custom */
+.resume-entry a { color: #000; text-decoration: underline; line-height: inherit; }
+.resume-entry a:hover { color: #000; text-decoration: none; }
+.resume-entry a:focus { color: #000; }
